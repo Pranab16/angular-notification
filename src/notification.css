@@ -67,18 +67,22 @@ button.toast-close-button {
     width: 100%;
 }
 .toast-top-left {
+    position: absolute;
     top: 12px;
     left: 12px;
 }
 .toast-top-right {
+    position: absolute;
     top: 12px;
     right: 12px;
 }
 .toast-bottom-right {
+    position: absolute;
     right: 12px;
     bottom: 12px;
 }
 .toast-bottom-left {
+    position: absolute;
     bottom: 12px;
     left: 12px;
 }
@@ -148,24 +152,6 @@ button.toast-close-button {
     background-color: #f89406;
 }
 
-/*Animations*/
-.toast {
-    opacity: 1 !important;
-}
-.toast.ng-enter {
-    opacity: 0 !important;
-    transition: opacity .3s linear;
-}
-.toast.ng-enter.ng-enter-active {
-    opacity: 1 !important;
-}
-.toast.ng-leave {
-    opacity: 1;
-    transition: opacity .3s linear;
-}
-.toast.ng-leave.ng-leave-active {
-    opacity: 0 !important;
-}
 /*Responsive Design*/
 @media all and (max-width: 240px) {
     #toast-container .toast {
